@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="./procesar.php" method="post">
+        <label for="name">Nombre : </label><br>
+        <input type="text" name="name" required pattern="[a-zA-Z\s]+"
+        placeholder="Nombre" title="Este campo solo recibe letras y espacios"><br>
+
+        <label for="email">Correo : </label><br>
+        <input type="email" name="email" required placeholder="Correo electronico"><br>
+
+        <label for="mensaje">Mensaje : </label><br>
+        <textarea name="mensaje" required placeholder="Mensaje"></textarea><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
